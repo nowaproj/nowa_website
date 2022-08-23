@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/nowa_website/static/css/main.0a6c9942.css",
+    "main.js": "/nowa_website/static/js/main.ddd6b5b8.js",
+    "static/js/787.f3291849.chunk.js": "/nowa_website/static/js/787.f3291849.chunk.js",
+    "static/media/feature-1.png": "/nowa_website/static/media/feature-1.d4c52b33c7b97c720485.png",
+    "static/media/hero.png": "/nowa_website/static/media/hero.4f1dcf6b804558975e76.png",
+    "static/media/feature-3.png": "/nowa_website/static/media/feature-3.87daef1bb5f41bed5efa.png",
+    "static/media/video.png": "/nowa_website/static/media/video.bc2db2b30a0d419bf848.png",
+    "static/media/preview-phone.png": "/nowa_website/static/media/preview-phone.ed63cd9f483ece643dbd.png",
+    "static/media/feature-2.png": "/nowa_website/static/media/feature-2.164fa501e69a1cc5d65c.png",
+    "static/media/feature-4.png": "/nowa_website/static/media/feature-4.507b3931a2d847432322.png",
+    "static/media/hero-about.png": "/nowa_website/static/media/hero-about.f3e27f4b2c1f6ba81323.png",
+    "static/media/splash.svg": "/nowa_website/static/media/splash.18be789dc35ffbae15d3.svg",
+    "static/media/raed.png": "/nowa_website/static/media/raed.a0fa86dce2785f94e91a.png",
+    "static/media/ludovica.png": "/nowa_website/static/media/ludovica.3ea7ee65ca93bb713cca.png",
+    "static/media/anas.png": "/nowa_website/static/media/anas.744071e5a3517df1de7f.png",
+    "index.html": "/nowa_website/index.html",
+    "main.0a6c9942.css.map": "/nowa_website/static/css/main.0a6c9942.css.map",
+    "main.ddd6b5b8.js.map": "/nowa_website/static/js/main.ddd6b5b8.js.map",
+    "787.f3291849.chunk.js.map": "/nowa_website/static/js/787.f3291849.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a6c9942.css",
+    "static/js/main.ddd6b5b8.js"
+  ]
+}
