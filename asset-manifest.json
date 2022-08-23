@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nowa_website/static/css/main.0a6c9942.css",
-    "main.js": "/nowa_website/static/js/main.ddd6b5b8.js",
+    "main.js": "/nowa_website/static/js/main.c40e4497.js",
     "static/js/787.f3291849.chunk.js": "/nowa_website/static/js/787.f3291849.chunk.js",
     "static/media/feature-1.png": "/nowa_website/static/media/feature-1.d4c52b33c7b97c720485.png",
     "static/media/hero.png": "/nowa_website/static/media/hero.4f1dcf6b804558975e76.png",
@@ -17,11 +17,11 @@
     "static/media/anas.png": "/nowa_website/static/media/anas.744071e5a3517df1de7f.png",
     "index.html": "/nowa_website/index.html",
     "main.0a6c9942.css.map": "/nowa_website/static/css/main.0a6c9942.css.map",
-    "main.ddd6b5b8.js.map": "/nowa_website/static/js/main.ddd6b5b8.js.map",
+    "main.c40e4497.js.map": "/nowa_website/static/js/main.c40e4497.js.map",
     "787.f3291849.chunk.js.map": "/nowa_website/static/js/787.f3291849.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a6c9942.css",
-    "static/js/main.ddd6b5b8.js"
+    "static/js/main.c40e4497.js"
   ]
 }
