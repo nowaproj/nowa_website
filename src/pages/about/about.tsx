@@ -7,8 +7,11 @@ import raed from "../../assets/raed.png";
 import anas from "../../assets/anas.png";
 import ludo from "../../assets/ludovica.png";
 import { AiFillLinkedin } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 export const AboutPage = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <main>
@@ -48,26 +51,16 @@ export const AboutPage = () => {
                 }}
               >
                 <p>
-                  OUR MISSION <img src={rocket} alt="lift off!" />
+                  {t("ourM")}
+                  <img src={rocket} alt="lift off!" />
                 </p>
-                <h1>
-                  For your apps to stand out they should be stunning, have a
-                  solid functionality and unbeaten performance. No compromise is
-                  accepted, but when the building process is complicated,
-                  overwhelming or limited, it becomes hard to build something
-                  that stands out. That’s why with Nowa we focus on making your
-                  app building journey feels enjoyable and exciting, while
-                  giving you unmatched freedom to build whatever comes in your
-                  mind, and going out with native apps that runs everywhere with
-                  excellent performance. With Nowa it’s easy for your apps to
-                  stand out.
-                </h1>
+                <h1>{t("ourD")}</h1>
               </motion.div>
             </div>
           </div>
         </div>
         <div className="about-team mara mw">
-          <p className="team-heading">MEET THE TEAM</p>
+          <p className="team-heading">{t("team")}</p>
           <div className="team-members">
             <div className="team-member">
               <div className="team-photo-wrapper">
@@ -86,8 +79,8 @@ export const AboutPage = () => {
                   </div>
                 </div>
               </div>
-              <p>Raed Abdallah</p>
-              <p>CTO</p>
+              <p>{t("raed")}</p>
+              <p>{t("cto")}</p>
             </div>
             <div className="team-member">
               <div className="team-photo">
@@ -109,8 +102,8 @@ export const AboutPage = () => {
                 </div>
               </div>
 
-              <p>Anas Alsalhi</p>
-              <p>CEO</p>
+              <p>{t("anas")}</p>
+              <p>{t("ceo")}</p>
             </div>
             <div className="team-member">
               <div className="team-photo">
@@ -131,8 +124,8 @@ export const AboutPage = () => {
                   </div>
                 </div>
               </div>
-              <p>Ludovica Palio</p>
-              <p>CCO</p>
+              <p>{t("ludo")}</p>
+              <p>{t("cco")}</p>
             </div>
           </div>
         </div>

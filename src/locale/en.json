@@ -1,0 +1,47 @@
+{
+  "translation": {
+    "nAbout": "ABOUT",
+    "nDoc": "DOCUMENTATION",
+
+    "header": "FALL IN LOVE WITH BUILDING APPS",
+    "headerSub": "Unlock a new level of power in building native apps using the most flexible app building tool ever made! Nowa gives you an ultimate freedom to build whatever app you want 10x times faster and easier.",
+    "earlyAccess": "GET EARLY ACCESS",
+    "sectionOneBuild": "Build quality Apps that simply STAND OUT!",
+    "sectionOneDiscover": "Discover how it works:",
+    "partners": "Backed by",
+    "featureOne": "CREATE STUNNING UI EFFORTLESSLY",
+    "featureOneSub": "With free-hand design approach, creating UI with Nowa feels like drawing on a paper! Break free from templates and limitations and create any design you want.",
+    "featureTwo": "GET THE SAME POWER OF CODE, BUT EASIER",
+    "featureTwoSub": "Have the power to build any logic in details using Nowa advanced drag and drop system, but much faster, easier and enjoyable than writing lines of boring code.",
+    "featureThree": "YOUR FAVOURITE BACKEND",
+    "featureThreeSub": "Firebase, or your own API, you can easily connect your app to any API within a couple of clicks.",
+    "featureFour": "YOU STILL NEED CODE? WE GOT YOU!",
+    "featureFourSub": "You can download the full-source code for your app anytime, for free. Even better, you can combine Nowa and Code together: with Nowa Hybrid Approach, use your favorite IDE and Nowa on the same project simultaneously.",
+    "ft1": "NATIVE QUALITY",
+    "ft2": "EXPORT FOR EVERY PLATFORM",
+    "ft3": "USE BOTH ON WEB AND DESKTOP",
+    "ft4": "FLUTTER BASED",
+    "ft5": "MARKETPLACE",
+    "sb1": "START BUILDING YOUR APP FOR FREE",
+    "sb2": "Sign up to get early access to our private beta",
+
+    "ourM": "OUR MISSION",
+    "ourD": "For your apps to stand out they should be stunning, have a solid functionality and unbeaten performance. No compromise is accepted, but when the building process is complicated, overwhelming or limited, it becomes hard to build something that stands out. That’s why with Nowa we focus on making your app building journey feels enjoyable and exciting, while giving you unmatched freedom to build whatever comes in your mind, and going out with native apps that runs everywhere with excellent performance. With Nowa it’s easy for your apps to stand out.",
+    "team": "MEET THE TEAM",
+    "raed": "Raed Abdallah",
+    "anas": "Anas Alsalhi",
+    "ludo": "Ludovica Palio",
+    "cto": "CTO",
+    "ceo": "CEO",
+    "cco": "CCO",
+
+    "footerC": "Copyright ©Nowa 2022",
+    "footerL1": "Documentation",
+    "footerL2": "Community",
+    "footerL3": "Contact",
+    "footerL4": "Youtube",
+    "footerL5": "LinkedIn",
+    "footerL6": "Twitter",
+    "footerL7": "Instagram"
+  }
+}

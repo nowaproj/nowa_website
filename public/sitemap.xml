@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://nowa.dev/</loc>
+	  <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://docs.google.com/forms/d/e/1FAIpQLSeH3WvEL6AdKQBXMtwzpur9O1vqZKh_FUhMvH7msOnNLjQwMg/viewform/</loc>
+	  <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nowa.dev/about/</loc>
+	  <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://docs.nowa.dev/#/</loc>
+	  <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.youtube.com/channel/UCvP7LKeb2sW1yTUqHAFEKOw/</loc>
+	  <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.instagram.com/nowa.dev/</loc>
+	  <priority>0.5</priority>
+    </url>
+</urlset>

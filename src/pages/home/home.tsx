@@ -5,6 +5,8 @@ import vector1 from "../../assets/Vector.png";
 import vector2 from "../../assets/Vector-1.png";
 import vector3 from "../../assets/Vector-2.png";
 import vector4 from "../../assets/Vector-3.png";
+import vector5 from "../../assets/Vector-4.png";
+
 import productFeature1 from "../../assets/feature-1.png";
 import productFeature2 from "../../assets/feature-3.png";
 import productFeature3 from "../../assets/feature-4.png";
@@ -18,14 +20,18 @@ import { Footer, NavBar, StartBuildingSection } from "../../components";
 import { Modal } from "../../foundation";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 export const HomePage = () => {
   const [showModal, setShowModal] = useState(false);
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <main>
         <div className="hero-wrapper">
           <NavBar />
-          <div className="hero mara mw">
+          <div className="hero mara mw" data-ar={i18n.language === "ar"}>
             <div className="hero-text">
               <motion.h1
                 animate={{ x: [-100, 0], opacity: [0, 1] }}
@@ -36,7 +42,7 @@ export const HomePage = () => {
                   once: true,
                 }}
               >
-                FALL IN LOVE WITH BUILDING APPS.
+                {t("header")}
               </motion.h1>
               <motion.p
                 animate={{ x: [-100, 0], opacity: [0, 1] }}
@@ -47,10 +53,7 @@ export const HomePage = () => {
                   once: true,
                 }}
               >
-                Unlock a new level of power in building native apps using the
-                most flexible app building tool ever made! Nowa gives you an
-                ultimate freedom to build whatever app you want ten times
-                faster.
+                {t("headerSub")}
               </motion.p>
               <motion.a
                 animate={{ y: [150, 0], opacity: [0, 1] }}
@@ -64,7 +67,7 @@ export const HomePage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GET EARLY ACCESS
+                {t("earlyAccess")}
               </motion.a>
             </div>
             <motion.img
@@ -95,19 +98,21 @@ export const HomePage = () => {
             />
           </div>
         </div>
-        <div className="section-one mara mw">
-          <p>BUILD APPLICATIONS FAST AND EASY</p>
-          <p>Discover how it works:</p>
+        <section className="section-one mara mw">
+          <p>{t("sectionOneBuild")}</p>
+          <p>{t("sectionOneDiscover")}</p>
           <img src={video} alt="video" onClick={() => setShowModal(true)} />
+          <p>{t("partners")}</p>
           <div className="so-sponsers mara mw">
+            <img src={vector5} alt="microsoft" />
             <img src={vector4} alt="science and startups" />
             <img src={vector1} alt="berlin" />
             <img src={vector3} alt="europe union" />
             <img src={vector2} alt="esf berlin" />
           </div>
-        </div>
-        <div className="section-two mara mw">
-          <div className="st-feature">
+        </section>
+        <section className="section-two mara mw">
+          <div className="st-feature" data-ar={i18n.language === "ar"}>
             <motion.div
               className="feature-desc"
               initial={{ x: -250, opacity: 0 }}
@@ -119,12 +124,8 @@ export const HomePage = () => {
                 once: true,
               }}
             >
-              <p>CREATE STUNNING UI EFFORTLESSLY</p>
-              <p>
-                With free-hand design approach, creating UI with Nowa feels like
-                drawing on a paper! Break free from templates and limitations
-                and create any design you want.
-              </p>
+              <p>{t("featureOneSub")}</p>
+              <p>{t("featureOneSub")}</p>
             </motion.div>
             <motion.div
               className="feature-image"
@@ -143,7 +144,7 @@ export const HomePage = () => {
               <img src={productFeature1} alt="placeholder" />
             </motion.div>
           </div>
-          <div className="st-feature">
+          <div className="st-feature" data-ar={i18n.language === "ar"}>
             <motion.div
               className="feature-desc"
               initial={{
@@ -158,12 +159,8 @@ export const HomePage = () => {
                 once: true,
               }}
             >
-              <p>GET THE SAME POWER OF CODE, BUT EASIER</p>
-              <p>
-                Have the power to build any logic in details using Nowa advanced
-                drag and drop system, but much faster, easier and enjoyable than
-                writing lines of boring code.
-              </p>
+              <p>{t("featureTwoSub")}</p>
+              <p>{t("featureTwoSub")}</p>
             </motion.div>
             <motion.div
               className="feature-image"
@@ -182,7 +179,7 @@ export const HomePage = () => {
               <img src={productFeature2} alt="placeholder" />
             </motion.div>
           </div>
-          <div className="st-feature">
+          <div className="st-feature" data-ar={i18n.language === "ar"}>
             <motion.div
               className="feature-desc"
               initial={{
@@ -197,11 +194,8 @@ export const HomePage = () => {
                 once: true,
               }}
             >
-              <p>YOUR FAVOURITE BACKEND</p>
-              <p>
-                Firebase, or your own API, you can easily connect your app to
-                any API within a couple of clicks.
-              </p>
+              <p>{t("featureThreeSub")}</p>
+              <p>{t("featureThreeSub")}</p>
             </motion.div>
             <motion.div
               className="feature-image"
@@ -220,7 +214,7 @@ export const HomePage = () => {
               <img src={productFeature3} alt="placeholder" />
             </motion.div>
           </div>
-          <div className="st-feature">
+          <div className="st-feature" data-ar={i18n.language === "ar"}>
             <motion.div
               className="feature-desc"
               initial={{
@@ -235,13 +229,8 @@ export const HomePage = () => {
                 once: true,
               }}
             >
-              <p>YOU STILL NEED CODE? WE GOT YOU!</p>
-              <p>
-                You can download the full-source code for your app anytime, for
-                free. Even better, you can combine Nowa and Code together: with
-                Nowa Hybrid Approach, use your favorite IDE and Nowa on the same
-                project simultaneously.
-              </p>
+              <p>{t("featureFour")}</p>
+              <p>{t("featureFourSub")}</p>
             </motion.div>
             <motion.div
               className="feature-image"
@@ -263,26 +252,26 @@ export const HomePage = () => {
           <div className="st-features mara mw">
             <div className="feature-wrapper">
               <img src={feature5} alt="feature one" />
-              <p>NATIVE QUALITY</p>
+              <p>{t("ft1")}</p>
             </div>
             <div className="feature-wrapper">
               <img src={feature2} alt="feature one" />
-              <p>EXPORT FOR EVERY PLATFORM</p>
+              <p>{t("ft2")}</p>
             </div>
             <div className="feature-wrapper">
               <img src={feature3} alt="feature one" />
-              <p>USE BOTH ON WEB AND DESKTOP</p>
+              <p>{t("ft3")}</p>
             </div>
             <div className="feature-wrapper">
               <img src={feature4} alt="feature one" />
-              <p>FLUTTER BASED</p>
+              <p>{t("ft4")}</p>
             </div>
             <div className="feature-wrapper">
               <img src={feature1} alt="feature one" />
-              <p>MARKETPLACE</p>
+              <p>{t("ft5")}</p>
             </div>
           </div>
-        </div>
+        </section>
         <StartBuildingSection />
       </main>
       <Footer />

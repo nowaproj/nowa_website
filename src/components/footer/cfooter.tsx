@@ -1,13 +1,17 @@
 import "./footer.scss";
 import logo from "../../assets/logo2.png";
+import { useTranslation } from "react-i18next";
+
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <footer className="mara mw">
       <ul className="fl">
         <li className="fl-i">
           <img src={logo} alt="logo" />
         </li>
-        <li>Copyright ©Nowa 2022</li>
+        <li>{t("footerC")}</li>
       </ul>
       <div className="fr">
         <ul className="fr-o">
@@ -17,7 +21,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Documentation
+              {t("footerL1")}
             </a>
           </li>
           <li>
@@ -26,7 +30,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Community
+              {t("footerL2")}
             </a>
           </li>
           <li>
@@ -35,7 +39,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Contact
+              {t("footerL3")}
             </a>
           </li>
         </ul>
@@ -46,7 +50,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Youtube
+              {t("footerL4")}
             </a>
           </li>
           <li>
@@ -55,7 +59,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              {t("footerL5")}
             </a>
           </li>
           <li>
@@ -64,7 +68,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Twitter
+              {t("footerL6")}
             </a>
           </li>
           <li>
@@ -73,7 +77,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram
+              {t("footerL7")}
             </a>
           </li>
         </ul>

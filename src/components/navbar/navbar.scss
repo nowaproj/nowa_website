@@ -12,6 +12,12 @@ nav {
   img {
     user-select: none;
   }
+  .menu-toggle {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+
   ul {
     &:nth-child(1) {
       display: flex;
@@ -39,6 +45,7 @@ nav {
     font-size: 16px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    position: relative;
     .nav-access {
       width: 220px;
       height: 56px;
@@ -56,15 +63,20 @@ nav {
       color: var(--color-blue);
     }
   }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 915px) {
+      display: flex;
+    }
+  }
   .menu-icon {
     color: white;
     font-size: 32px;
     cursor: pointer;
-    display: none;
-
-    @media (max-width: 915px) {
-      display: inherit;
-    }
   }
   .menu-mobile {
     background-color: var(--color-yellow);

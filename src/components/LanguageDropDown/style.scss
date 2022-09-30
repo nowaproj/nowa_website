@@ -1,0 +1,46 @@
+.lnul {
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  background-color: white;
+  box-shadow: 0 0 16px 0 rgba(0 0 0 / 0.15);
+  width: 145px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+  z-index: 11;
+  li {
+    text-align: left;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    display: grid;
+    place-items: flex-start;
+    cursor: pointer;
+    letter-spacing: normal;
+    &[data-selected="true"] {
+      background-color: var(--color-yellow);
+      color: white;
+    }
+    &[data-selected="false"] {
+      color: #333;
+    }
+    p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      padding: 15px;
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      background-color: var(--color-yellow);
+      p {
+        color: white;
+      }
+    }
+  }
+}
