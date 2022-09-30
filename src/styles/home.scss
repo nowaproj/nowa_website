@@ -211,12 +211,12 @@
     @media (max-width: 1100px) {
       gap: 80px;
     }
-    &[data-ar="true"] {
-      .feature-desc {
-        grid-column: 2;
-        grid-row: 1; /* NEW */
-      }
-    }
+    // &[data-ar="true"] {
+    //   .feature-desc {
+    //     grid-column: 2;
+    //     grid-row: 1; /* NEW */
+    //   }
+    // }
     .feature-desc {
       display: flex;
       flex-direction: column;

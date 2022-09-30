@@ -124,7 +124,7 @@ export const HomePage = () => {
                 once: true,
               }}
             >
-              <p>{t("featureOneSub")}</p>
+              <p>{t("featureOne")}</p>
               <p>{t("featureOneSub")}</p>
             </motion.div>
             <motion.div
@@ -159,7 +159,7 @@ export const HomePage = () => {
                 once: true,
               }}
             >
-              <p>{t("featureTwoSub")}</p>
+              <p>{t("featureTwo")}</p>
               <p>{t("featureTwoSub")}</p>
             </motion.div>
             <motion.div
@@ -194,7 +194,7 @@ export const HomePage = () => {
                 once: true,
               }}
             >
-              <p>{t("featureThreeSub")}</p>
+              <p>{t("featureThree")}</p>
               <p>{t("featureThreeSub")}</p>
             </motion.div>
             <motion.div

@@ -1,6 +1,6 @@
 import { Footer, NavBar, StartBuildingSection } from "../../components";
 import "../../styles/about.scss";
-import hero from "../../assets/about-hero2.svg";
+import hero from "../../assets/about-hero2.png";
 import rocket from "../../assets/rocket.png";
 import { motion } from "framer-motion";
 import raed from "../../assets/raed.png";
