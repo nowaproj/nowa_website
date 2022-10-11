@@ -3,9 +3,11 @@ import phones from "../../assets/preview-phone.png";
 import { motion } from "framer-motion";
 import "./StartBuilding.scss";
 import { useTranslation } from "react-i18next";
+import useAnalyticsEventTracker from "../../hooks/UseAnalyticsTracker";
 
 export const StartBuildingSection = () => {
   const { t } = useTranslation();
+  const gaEventTracker = useAnalyticsEventTracker();
 
   return (
     <div className="start-building">
@@ -16,6 +18,9 @@ export const StartBuildingSection = () => {
           href="https://docs.google.com/forms/d/e/1FAIpQLSeH3WvEL6AdKQBXMtwzpur9O1vqZKh_FUhMvH7msOnNLjQwMg/viewform"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => {
+            gaEventTracker();
+          }}
         >
           {t("earlyAccess")}
         </a>

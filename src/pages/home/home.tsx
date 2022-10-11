@@ -21,11 +21,12 @@ import { Modal } from "../../foundation";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import useAnalyticsEventTracker from "../../hooks/UseAnalyticsTracker";
 
 export const HomePage = () => {
   const [showModal, setShowModal] = useState(false);
   const { t, i18n } = useTranslation();
-
+  const gaEventTracker = useAnalyticsEventTracker();
   return (
     <>
       <main>
@@ -66,6 +67,9 @@ export const HomePage = () => {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeH3WvEL6AdKQBXMtwzpur9O1vqZKh_FUhMvH7msOnNLjQwMg/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  gaEventTracker();
+                }}
               >
                 {t("earlyAccess")}
               </motion.a>
