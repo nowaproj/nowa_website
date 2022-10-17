@@ -7,7 +7,7 @@ import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import en from "./locale/en.json";
 import ar from "./locale/ar.json";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { useEffect } from "react";
 
 ReactGA.initialize("G-SDXTNSBBMV");
@@ -31,10 +31,6 @@ i18n
   });
 
 function App() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-
   return (
     <BrowserRouter>
       <Routes>

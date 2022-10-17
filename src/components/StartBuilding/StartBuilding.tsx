@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import "./StartBuilding.scss";
 import { useTranslation } from "react-i18next";
 import useAnalyticsEventTracker from "../../hooks/UseAnalyticsTracker";
+import ReactGA from "react-ga4";
 
 export const StartBuildingSection = () => {
   const { t } = useTranslation();
@@ -19,7 +20,11 @@ export const StartBuildingSection = () => {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => {
-            gaEventTracker();
+            ReactGA.event({
+              action: "clicked button",
+              category: "button_clicks",
+              label: "get early access",
+            });
           }}
         >
           {t("earlyAccess")}

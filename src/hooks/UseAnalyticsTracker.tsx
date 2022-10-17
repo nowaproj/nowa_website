@@ -1,12 +1,16 @@
 import React from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const useAnalyticsEventTracker = (category = "User Actions") => {
   const eventTracker = (
     action = "button click",
     label = "get early access"
   ) => {
-    ReactGA.event({ category, action, label });
+    ReactGA.event({
+      action: "asd",
+      category: "button_clicks",
+      label: "get early access",
+    });
   };
   return eventTracker;
 };

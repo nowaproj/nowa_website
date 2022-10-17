@@ -8,9 +8,17 @@ import anas from "../../assets/anas.png";
 import ludo from "../../assets/ludovica.png";
 import { AiFillLinkedin } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
-
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
 export const AboutPage = () => {
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    ReactGA.send({
+      hintType: "pageview",
+      page: "/about",
+    });
+  }, []);
 
   return (
     <>
@@ -73,6 +81,12 @@ export const AboutPage = () => {
                       href="https://www.linkedin.com/in/raed-abdallah-48b105101/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() => {
+                        ReactGA.event({
+                          action: "raed linked in",
+                          category: "button_clicks",
+                        });
+                      }}
                     >
                       <AiFillLinkedin />
                     </a>
@@ -94,6 +108,12 @@ export const AboutPage = () => {
                         href="https://www.linkedin.com/in/anas-alsalhi/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => {
+                          ReactGA.event({
+                            action: "anas linked in",
+                            category: "button_clicks",
+                          });
+                        }}
                       >
                         <AiFillLinkedin />
                       </a>
@@ -117,6 +137,12 @@ export const AboutPage = () => {
                         href="https://www.linkedin.com/in/ludovica-palio/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => {
+                          ReactGA.event({
+                            action: "ludo linked in",
+                            category: "button_clicks",
+                          });
+                        }}
                       >
                         <AiFillLinkedin />
                       </a>

@@ -6,7 +6,6 @@ import vector2 from "../../assets/Vector-1.png";
 import vector3 from "../../assets/Vector-2.png";
 import vector4 from "../../assets/Vector-3.png";
 import vector5 from "../../assets/Vector-4.png";
-
 import productFeature1 from "../../assets/feature-1.png";
 import productFeature2 from "../../assets/feature-3.png";
 import productFeature3 from "../../assets/feature-4.png";
@@ -21,12 +20,19 @@ import { Modal } from "../../foundation";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import useAnalyticsEventTracker from "../../hooks/UseAnalyticsTracker";
-
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 export const HomePage = () => {
   const [showModal, setShowModal] = useState(false);
   const { t, i18n } = useTranslation();
-  const gaEventTracker = useAnalyticsEventTracker();
+
+  useEffect(() => {
+    ReactGA.send({
+      hintType: "pageview",
+      page: "/home",
+    });
+  }, []);
+
   return (
     <>
       <main>
@@ -68,7 +74,10 @@ export const HomePage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {
-                  gaEventTracker();
+                  ReactGA.event({
+                    action: "get early access",
+                    category: "button_clicks",
+                  });
                 }}
               >
                 {t("earlyAccess")}
@@ -105,7 +114,17 @@ export const HomePage = () => {
         <section className="section-one mara mw">
           <p>{t("sectionOneBuild")}</p>
           <p>{t("sectionOneDiscover")}</p>
-          <img src={video} alt="video" onClick={() => setShowModal(true)} />
+          <img
+            src={video}
+            alt="video"
+            onClick={() => {
+              ReactGA.event({
+                action: "view video",
+                category: "button_clicks",
+              });
+              setShowModal(true);
+            }}
+          />
           <p>{t("partners")}</p>
           <div className="so-sponsers mara mw">
             <img src={vector5} alt="microsoft" />
