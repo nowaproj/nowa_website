@@ -12,6 +12,7 @@ export const Footer = () => {
           <img src={logo} alt="logo" />
         </li>
         <li>{t("footerC")}</li>
+        <li>Hardenbergstraße 38, 10623 Berlin</li>
       </ul>
       <div className="fr">
         <ul className="fr-o">
