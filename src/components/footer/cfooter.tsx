@@ -43,6 +43,15 @@ export const Footer = () => {
               {t("footerL3")}
             </a>
           </li>
+          <li>
+            <a
+              href="https://www.reddit.com/r/nowa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reddit
+            </a>
+          </li>
         </ul>
         <ul className="fr-t">
           <li>

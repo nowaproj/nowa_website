@@ -47,7 +47,7 @@ export const NavBar = () => {
       <div className="mara mw">
         <ul>
           <li>
-            <Link to="https://nowa.dev/">
+            <Link to="/">
               <img src={logo} alt="logo" />
             </Link>
           </li>

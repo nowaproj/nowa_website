@@ -15,6 +15,7 @@ import feature2 from "../../assets/small-feature-icon (1).png";
 import feature3 from "../../assets/small-feature-icon (2).png";
 import feature4 from "../../assets/small-feature-icon (3).png";
 import feature5 from "../../assets/small-feature-icon (4).png";
+import arrowRight from "../../assets/arrow_right.png";
 import { Footer, NavBar, StartBuildingSection } from "../../components";
 import { Modal } from "../../foundation";
 import { useState } from "react";
@@ -22,6 +23,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
+import { Link } from "react-router-dom";
 export const HomePage = () => {
   const [showModal, setShowModal] = useState(false);
   const { t, i18n } = useTranslation();
@@ -35,9 +37,13 @@ export const HomePage = () => {
 
   return (
     <>
+      <NavBar />
       <main>
         <div className="hero-wrapper">
-          <NavBar />
+          <Link to="/event" className="hero-announcement">
+            <p>NOWA LAUNCH EVENT 🎉</p>
+            <img src={arrowRight} alt="" />
+          </Link>
           <div className="hero mara mw" data-ar={i18n.language === "ar"}>
             <div className="hero-text">
               <motion.h1

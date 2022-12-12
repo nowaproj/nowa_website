@@ -1,0 +1,124 @@
+.event-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0 100px;
+  gap: 40px;
+  @media (max-width: 1024px) {
+    padding: 200px 0 50px;
+  }
+  @media (max-width: 800px) {
+    gap: 20px;
+  }
+  h1 {
+    background: center/cover url("../assets/splash.svg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Albert Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    @media (max-width: 800px) {
+      font-size: 25px;
+      line-height: initial;
+    }
+  }
+  h2 {
+    font-family: "Albert Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #0e1a2f;
+    max-width: 761px;
+    @media (max-width: 800px) {
+      font-size: 20px;
+      line-height: initial;
+    }
+  }
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 28px;
+    gap: 10px;
+    height: 54px;
+    background: #ffae45;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    font-family: "Albert Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0e1a2f;
+  }
+}
+
+.event-image {
+  padding: 80px 0px 100px;
+  @media (max-width: 800px) {
+    padding: 40px 0px 50px;
+  }
+  img {
+    aspect-ratio: 1400 / 788;
+    max-width: 1400px;
+    width: 100%;
+  }
+}
+
+.event-desc {
+  padding: 80px 0 20px;
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #0e1a2f;
+  max-width: 1314px;
+  @media (max-width: 800px) {
+    padding: 40px 0px 10px;
+    font-size: 20px;
+  }
+}
+
+.event-add {
+  padding: 80px 0 140px;
+  @media (max-width: 800px) {
+    padding: 40px 0 70px;
+  }
+  a {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 28px;
+    gap: 10px;
+    height: 54px;
+    background: #ffae45;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    font-family: "Albert Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0e1a2f;
+  }
+}

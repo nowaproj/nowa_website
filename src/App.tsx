@@ -9,6 +9,7 @@ import en from "./locale/en.json";
 import ar from "./locale/ar.json";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
+import { EventPage } from "./pages/event/event";
 
 ReactGA.initialize("G-SDXTNSBBMV");
 
@@ -36,6 +37,7 @@ function App() {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="event" element={<EventPage />} />
         <Route path="/*" element={<HomePage />} />
       </Routes>
     </BrowserRouter>

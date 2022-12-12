@@ -1,14 +1,15 @@
 nav {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   display: grid;
   place-items: center;
-  height: 140px;
-  min-height: 140px;
+  height: 100px;
+  min-height: 100px;
   z-index: 100;
-  position: relative;
+  background: rgba(14, 26, 47, 0.2);
+  backdrop-filter: blur(12px);
   img {
     user-select: none;
   }
