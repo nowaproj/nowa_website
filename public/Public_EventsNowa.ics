@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Public Events
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+DTSTART:20230117T190000Z
+DTEND:20230117T200000Z
+DTSTAMP:20221212T200112Z
+UID:1le7jjuvgd5nca6ffa233umjb6@google.com
+CLASS:PUBLIC
+CREATED:20221212T161010Z
+DESCRIPTION:Hello everyone! 👋In this stream Anas\, Raed and Ludo will demo
+ nstrate the potential of Nowa and how to use it\, in occasion of the launch
+  or beta version. During the live we will also collect and answer your ques
+ tions\, see you soon!<br><br>Join this link at 20.00 CET: <a href="https://
+ youtu.be/sMvgBUbfA4o" id="ow843" __is_owner="true">Nowa livesteam</a>
+LAST-MODIFIED:20221212T161534Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Nowa Demo + Q&A 🚀
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

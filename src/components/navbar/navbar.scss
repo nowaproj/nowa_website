@@ -5,8 +5,8 @@ nav {
   width: 100vw;
   display: grid;
   place-items: center;
-  height: 100px;
-  min-height: 100px;
+  height: 80px;
+  min-height: 80px;
   z-index: 100;
   background: rgba(14, 26, 47, 0.2);
   backdrop-filter: blur(12px);
@@ -83,7 +83,7 @@ nav {
     background-color: var(--color-yellow);
     width: 100%;
     position: absolute;
-    bottom: -60px;
+    bottom: -95px;
     list-style: none;
     left: 0;
     padding: 20px 40px;
