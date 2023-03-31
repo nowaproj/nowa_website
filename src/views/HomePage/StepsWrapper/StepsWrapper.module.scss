@@ -1,0 +1,18 @@
+.steps-wrapper {
+  width: var(--width);
+  margin: 0px auto 180px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 44px 1fr 44px 1fr 44px 1fr;
+  align-items: center;
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 44px 1fr;
+  }
+}
+.arrow {
+  @media (max-width: 1200px) {
+    &:nth-of-type(2) {
+      display: none;
+    }
+  }
+}

@@ -4,6 +4,7 @@
   --blue-nowa: #0e1a2f;
   --blue-nowa-rgb: 14 26 47;
   --yellow-nowa: #ffae45;
+  --yellow-nowa-rgb: 255 174 69;
   --accent-nowa: #9ce6d9;
   --bg-nowa-grey: #e6ebea;
   --text-color-main: var(--blue-nowa);
@@ -22,6 +23,7 @@ button {
 }
 html {
   color: var(--text-color-main);
+  background-color: var(--bg-nowa-grey);
 }
 a {
   color: inherit;

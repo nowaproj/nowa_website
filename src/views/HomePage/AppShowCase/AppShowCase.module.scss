@@ -1,0 +1,47 @@
+.apps-showcase {
+  margin: 0 auto;
+  padding: 180px 0;
+  width: var(--width);
+  display: grid;
+  grid-template-columns: 339px 1fr;
+  align-items: center;
+}
+
+.apps-showcase-text {
+  h3 {
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+  p {
+    color: var(--text-color-sub);
+  }
+}
+.apps-showcase-apps {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 650px;
+}
+.app-decorator-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+.app {
+  position: absolute;
+  border-radius: 32.4076px;
+  transform-origin: bottom center;
+}
+.app-shadow-1 {
+  filter: drop-shadow(81.019px 27.0063px 135.032px rgba(9, 20, 50, 0.15));
+}
+.app-shadow-2 {
+  filter: drop-shadow(13.5032px 8.1019px 135.032px rgba(9, 20, 50, 0.1));
+}
+.app-decorator-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 10;
+}
