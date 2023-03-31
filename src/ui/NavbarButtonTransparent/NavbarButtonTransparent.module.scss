@@ -1,0 +1,26 @@
+.navbar-button-transparent {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  line-height: 0;
+  height: 43px;
+  padding: 0px 12px;
+  font-weight: bold;
+
+  svg {
+    line-height: 0;
+    transform-origin: center;
+    height: 0px;
+    width: 0px;
+    transition: all 0.2s;
+  }
+  &:hover {
+    background-color: var(--color-hover-button-navbar);
+    svg {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}

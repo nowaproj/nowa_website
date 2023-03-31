@@ -1,0 +1,22 @@
+.header-wrapper {
+  background-color: rgb(var(--blue-nowa-rgb) / 0.25);
+  backdrop-filter: blur(12px);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+.header {
+  width: var(--width);
+  margin: 0px auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
