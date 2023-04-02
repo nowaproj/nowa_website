@@ -1,4 +1,4 @@
-import { seperatedBuilder } from "@/utils";
+import { seperatedBuilder, useSize } from "@/utils";
 import Image from "next/image";
 import React from "react";
 import { STEPS } from "../consts";
@@ -6,6 +6,7 @@ import { HomePageStep } from "../HomePageStep";
 import style from "./StepsWrapper.module.scss";
 
 export const StepsWrapper = () => {
+  const [width] = useSize();
   return (
     <section className={style["steps-wrapper"]}>
       {seperatedBuilder(
@@ -17,10 +18,9 @@ export const StepsWrapper = () => {
             <Image
               src="/cassets/arrow-2.png"
               width={44}
-              height={84.26}
+              height={width >= 800 ? 84.26 : 40}
               style={{
-                objectFit: "scale-down",
-                transform: "rotate(67deg)",
+                transform: width >= 800 ? "rotate(67deg)" : "rotate(150deg)",
               }}
               alt=""
               className={style["arrow"]}
@@ -29,10 +29,12 @@ export const StepsWrapper = () => {
             <Image
               src="/cassets/arrow-2.png"
               width={44}
-              height={84.26}
+              height={width >= 800 ? 84.26 : 40}
               style={{
-                objectFit: "scale-down",
-                transform: "rotate(-67deg)  scaleY(-1)",
+                transform:
+                  width >= 800
+                    ? "rotate(-67deg)  scaleY(-1)"
+                    : "rotate(30deg)  scaleY(-1)",
               }}
               alt=""
               className={style["arrow"]}

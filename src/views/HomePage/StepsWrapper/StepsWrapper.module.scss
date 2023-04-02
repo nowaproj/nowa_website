@@ -8,11 +8,20 @@
   @media (max-width: 1200px) {
     grid-template-columns: 1fr 44px 1fr;
   }
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 0px auto 100px auto;
+  }
 }
 .arrow {
-  @media (max-width: 1200px) {
+  object-fit: scale-down;
+  @media (max-width: 1200px) and (min-width: 800px) {
     &:nth-of-type(2) {
       display: none;
     }
+  }
+  @media (max-width: 800px) {
+    transform: rotate(0deg);
   }
 }

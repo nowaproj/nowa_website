@@ -103,3 +103,55 @@ export const STUNNING = [
     icon: "/cassets/woman.png",
   },
 ];
+
+export const FEATURE = [
+  {
+    img: "/assets/feature-1.svg",
+    text: "Export for every platform",
+  },
+  {
+    img: "/assets/feature-2.svg",
+    text: "Flutter based",
+  },
+  {
+    img: "/assets/feature-3.svg",
+    text: "Hot Reload",
+  },
+  {
+    img: "/assets/feature-4.svg",
+    text: "Templates and plug-ins",
+  },
+  {
+    img: "/assets/feature-5.svg",
+    text: "Native quality",
+  },
+  {
+    img: "/assets/feature-6.svg",
+    text: "Build with AI",
+  },
+];
+
+export const FOR_SECTION = [
+  {
+    title: "For developers",
+    icon: ["/cassets/woman.png"],
+    img: "/assets/for-developers.png",
+    sub: "Say goodbye for the long stressful coding hours and replace it with more creative and productive workflow that let you do more with less.",
+  },
+  {
+    title: "For Startups",
+    img: "/assets/for-startups.png",
+    icon: ["/cassets/man.png", "/cassets/woman-2.png", "/cassets/artist.png"],
+    sub: "Build and iterate on your unique app completely yourself! no need to learn code, outsource or hire, and no need to lower your app quality as well!",
+  },
+  {
+    title: "For Teams",
+    img: "/assets/for-teams.png",
+    icon: [
+      "/cassets/manager.png",
+      "/cassets/woman.png",
+      "/cassets/building.png",
+    ],
+    sub: "Maximize efficiency by replacing all the different tools with Nowa: designers can use Nowa the same way they do with UI design software, so developers don’t have to reimplement them by writing code, instead all their energy will be on customizing functionalities. No redundant work anymore.",
+  },
+];

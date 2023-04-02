@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { Footer, Navbar } from "@/components";
 import { MainSeo } from "@/seo";
 import { HomePage } from "@/views";
 import React from "react";
@@ -9,6 +9,7 @@ export default function HP() {
       <MainSeo />
       <Navbar />
       <HomePage />
+      <Footer />
     </>
   );
 }

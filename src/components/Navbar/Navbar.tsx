@@ -14,6 +14,7 @@ export const Navbar = () => {
             alt="logo"
             width={108}
             height={22.67}
+            priority
           />
         </Link>
         <div className={style["links"]}>

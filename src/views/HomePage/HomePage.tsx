@@ -4,6 +4,10 @@ import style from "./HomePage.module.scss";
 import { StepsWrapper } from "./StepsWrapper";
 import { AppShowCase } from "./AppShowCase";
 import { StunningAppsSection } from "./StunningAppsSection";
+import { FeatureSection } from "./FeatureSection";
+import { ForSection } from "./ForSection";
+import { BackedSection } from "./BackedSection";
+import { StartBuilding } from "./StartBuilding";
 
 export const HomePage = () => {
   return (
@@ -20,11 +24,10 @@ export const HomePage = () => {
       <AppShowCase />
       <StepsWrapper />
       <StunningAppsSection />
-      <div
-        style={{
-          height: 1000,
-        }}
-      />
+      <FeatureSection />
+      <ForSection />
+      <BackedSection />
+      <StartBuilding />
     </>
   );
 };

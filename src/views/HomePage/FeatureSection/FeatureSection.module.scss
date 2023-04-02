@@ -1,0 +1,31 @@
+.feature-section {
+  width: var(--width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 27px;
+  justify-content: center;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20.0746px 12.7747px;
+  width: 176.9px;
+  height: 237.25px;
+  background: #ffffff;
+  border-radius: 27.3744px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 0px 5px 0px rgb(var(--yellow-nowa-rgb) / 0.15);
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 0px 0px 60px 0px rgb(var(--yellow-nowa-rgb) / 0.3);
+  }
+}

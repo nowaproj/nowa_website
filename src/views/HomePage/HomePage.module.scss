@@ -9,14 +9,31 @@
   text-align: center;
   color: #fffbf6;
   position: relative;
+  margin-bottom: 413px;
+  @media (max-width: 1200px) {
+    margin-bottom: 300px;
+  }
+  @media (max-width: 800px) {
+    height: 600px;
+    padding-top: 120px;
+    margin-bottom: 125px;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 0px;
+  }
   h1 {
     font-size: 58px;
+    @media (max-width: 800px) {
+      font-size: 44px;
+    }
   }
   h2 {
     font-size: 20px;
     max-width: 578px;
+    @media (max-width: 800px) {
+      font-size: 16px;
+    }
   }
-  margin-bottom: 413px;
 }
 .video {
   background-color: grey;
@@ -24,4 +41,15 @@
   height: 674px;
   position: absolute;
   top: calc(100% - 261px);
+  @media (max-width: 1200px) {
+    height: 500px;
+  }
+  @media (max-width: 800px) {
+    top: calc(100% - 160px);
+    height: 350px;
+  }
+  @media (max-width: 600px) {
+    top: calc(100% - 120px);
+    height: 200px;
+  }
 }

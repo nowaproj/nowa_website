@@ -3,12 +3,19 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  @media (max-width: 800px) {
+    flex-direction: row-reverse;
+  }
 }
 .step-image {
   position: relative;
   width: 100%;
-  max-width: 237;
+  max-width: 237px;
   height: 167px;
+  @media (max-width: 800px) {
+    width: 125px;
+    height: 125px;
+  }
   img {
     object-fit: scale-down;
   }
@@ -22,6 +29,9 @@
   max-width: 210px;
   text-align: center;
   position: relative;
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
   p {
     position: absolute;
     top: -15px;

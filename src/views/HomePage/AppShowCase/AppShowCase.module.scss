@@ -5,12 +5,27 @@
   display: grid;
   grid-template-columns: 339px 1fr;
   align-items: center;
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    gap: 100px;
+    padding: 180px 0;
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
+  @media (max-width: 600px) {
+    padding: 120px 0;
+  }
 }
 
 .apps-showcase-text {
   h3 {
     font-size: 48px;
     margin-bottom: 25px;
+    @media (max-width: 1200px) {
+      font-size: 30px;
+    }
   }
   p {
     color: var(--text-color-sub);
@@ -21,13 +36,11 @@
   display: grid;
   place-items: center;
   height: 650px;
+  @media (max-width: 1200px) {
+    height: 350px;
+  }
 }
-.app-decorator-left {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 10;
-}
+
 .app {
   position: absolute;
   border-radius: 32.4076px;
@@ -44,4 +57,21 @@
   bottom: 0px;
   right: 0px;
   z-index: 10;
+  @media (max-width: 1200px) {
+    right: calc(50% - 30px);
+    transform: rotate(30deg);
+    bottom: -50px;
+  }
+}
+.app-decorator-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  @media (max-width: 1200px) {
+    left: calc(50% - 40px);
+
+    transform: rotate(30deg);
+    top: -50px;
+  }
 }

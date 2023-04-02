@@ -1,7 +1,7 @@
 .header-wrapper {
   background-color: rgb(var(--blue-nowa-rgb) / 0.5);
   backdrop-filter: blur(12px);
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -14,9 +14,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 66px;
 }
 .links {
   display: flex;
   align-items: center;
   gap: 16px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }

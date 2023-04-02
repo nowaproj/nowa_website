@@ -5,7 +5,8 @@ import React, { FC } from "react";
 import style from "./Button.module.scss";
 type Props = {
   text: string;
-  varient?: "ghost" | "primary";
+  varient?: "ghost" | "primary" | "white";
+  icon?: React.ReactNode;
   arrow?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement> &
   (
@@ -19,6 +20,7 @@ export const Button: FC<Props> = ({
   link,
   to,
   arrow,
+  icon,
   ...rest
 }) => {
   return (
@@ -27,7 +29,15 @@ export const Button: FC<Props> = ({
       {...rest}
       data-has-arrow={arrow}
     >
-      {link ? <Link href={to}>{text}</Link> : text}
+      {link ? (
+        <Link href={to}>
+          {text} {icon}
+        </Link>
+      ) : (
+        <>
+          {text} {icon}
+        </>
+      )}
       {arrow && (
         <Image
           className={style["arrow"]}

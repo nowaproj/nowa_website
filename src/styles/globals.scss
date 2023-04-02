@@ -25,6 +25,9 @@ html {
   color: var(--text-color-main);
   background-color: var(--bg-nowa-grey);
 }
+body {
+  overflow-x: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;

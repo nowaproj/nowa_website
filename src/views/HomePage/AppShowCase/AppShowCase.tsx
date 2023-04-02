@@ -3,8 +3,10 @@ import React from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import style from "./AppShowCase.module.scss";
+import { useSize } from "@/utils";
 
 export const AppShowCase = () => {
+  const [width] = useSize();
   return (
     <section className={style["apps-showcase"]}>
       <div className={style["apps-showcase-text"]}>
@@ -59,19 +61,16 @@ export const AppShowCase = () => {
           whileInView={{
             rotateZ: [0, 8],
             y: [0, -10],
-            x: [0, 230],
+            x: [0, width >= 1200 ? 230 : 105],
           }}
           transition={{
-            delay: 0.1,
-          }}
-          viewport={{
-            margin: "-450px",
+            delay: 0.2,
           }}
         >
           <Image
-            width={243.06}
-            height={526.08}
-            alt="app example "
+            width={width >= 1200 ? 243.06 : 121.7}
+            height={width >= 1200 ? 526.08 : 263.5}
+            alt="app example"
             src="/assets/app3.svg"
           />
         </motion.div>
@@ -79,19 +78,16 @@ export const AppShowCase = () => {
           className={clsx(style["app"], style["app-shadow-1"])}
           whileInView={{
             y: [0, 20],
-            x: 25,
+            x: width >= 1200 ? 25 : 0,
           }}
           transition={{
-            delay: 0.1,
-          }}
-          viewport={{
-            margin: "-450px",
+            delay: 0.2,
           }}
         >
           <Image
-            width={243.06}
-            height={526.08}
-            alt="app example "
+            width={width >= 1200 ? 243.06 : 121.7}
+            height={width >= 1200 ? 526.08 : 263.5}
+            alt="app example"
             src="/assets/app2.svg"
           />
         </motion.div>
@@ -100,19 +96,16 @@ export const AppShowCase = () => {
           whileInView={{
             rotateZ: [0, -8],
             y: [0, -10],
-            x: [0, -180],
+            x: [0, width >= 1200 ? -180 : -105],
           }}
           transition={{
-            delay: 0.1,
-          }}
-          viewport={{
-            margin: "-450px",
+            delay: 0.2,
           }}
         >
           <Image
-            width={243.06}
-            height={526.08}
-            alt="app example "
+            width={width >= 1200 ? 243.06 : 121.7}
+            height={width >= 1200 ? 526.08 : 263.5}
+            alt="app example"
             src="/assets/app1.svg"
           />
         </motion.div>
