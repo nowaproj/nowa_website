@@ -18,7 +18,12 @@ export const Footer = () => {
             alt="logo"
           />
           <p>Say hi! 👋🏻{width && <br />} team@nowa.dev</p>
-          <div className={style["discord"]}>
+          <a
+            className={style["discord"]}
+            href="https://discord.gg/ByKfn3H7gX"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/cassets/discord.png"
               alt="discord"
@@ -26,18 +31,48 @@ export const Footer = () => {
               height={14}
             />
             <p>Join Discord</p>
-          </div>
+          </a>
         </ul>
         <ul className={style["ul2"]}>
-          <Link href={"/"}>Documentation</Link>
-          <Link href={"/"}>Privacy Policy</Link>
-          <Link href={"/"}>Imprint</Link>
+          <a
+            href="https://docs.nowa.dev/#/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Documentation
+          </a>
+          <Link href={"/privacy-policy"}>Privacy Policy</Link>
+          <Link href={"/imprint"}>Imprint</Link>
         </ul>
         <ul className={style["ul3"]}>
-          <Link href={"/"}>Youtube</Link>
-          <Link href={"/"}>Linkedin</Link>
-          <Link href={"/"}>Twitter</Link>
-          <Link href={"/"}>Reddit</Link>
+          <a
+            href="https://www.youtube.com/channel/UCvP7LKeb2sW1yTUqHAFEKOw"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Youtube
+          </a>
+          <a
+            href="https://www.linkedin.com/company/nowaengine/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </a>
+          <a
+            href="https://twitter.com/nowa_dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
+          <a
+            href="https://www.reddit.com/r/nowa/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Reddit
+          </a>
         </ul>
       </ul>
       <p className={style["copyright"]}>© Nowa {new Date().getFullYear()}</p>

@@ -11,7 +11,7 @@
   position: relative;
   margin-bottom: 413px;
   @media (max-width: 1200px) {
-    margin-bottom: 300px;
+    margin-bottom: 150px;
   }
   @media (max-width: 800px) {
     height: 600px;
@@ -41,6 +41,8 @@
   height: 674px;
   position: absolute;
   top: calc(100% - 261px);
+  border-radius: var(--br);
+  overflow: hidden;
   @media (max-width: 1200px) {
     height: 500px;
   }

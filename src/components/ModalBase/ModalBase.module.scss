@@ -1,0 +1,24 @@
+.out-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(0 0 0 / 0);
+  z-index: 9999;
+}
+
+.in-modal {
+  background-color: var(--level-one);
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.in-modal-2 {
+  position: absolute;
+  isolation: isolate;
+  z-index: 888;
+  translate: translateY(100px);
+}

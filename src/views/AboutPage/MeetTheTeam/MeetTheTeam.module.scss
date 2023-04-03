@@ -1,0 +1,43 @@
+.meet-the-team {
+  width: var(--width);
+  margin: 128px auto;
+  h3 {
+    font-size: 30px;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  @media (max-width: 1200px) {
+    margin: 60px auto;
+  }
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  a {
+    font-size: 24px;
+    transition: all 0.2s;
+    font-weight: 700;
+    &:hover {
+      color: var(--yellow-nowa);
+    }
+  }
+  sub {
+    color: var(--text-color-sub);
+    max-width: 320px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

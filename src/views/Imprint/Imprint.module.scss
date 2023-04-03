@@ -1,0 +1,21 @@
+.wrapper {
+  margin: 160px auto;
+  width: var(--width);
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+  }
+  h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+}

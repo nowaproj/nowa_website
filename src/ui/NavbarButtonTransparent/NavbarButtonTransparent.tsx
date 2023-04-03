@@ -1,17 +1,19 @@
-import Link from "next/link";
 import React, { FC } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import style from "./NavbarButtonTransparent.module.scss";
 type Props = {
-  to: string;
   text: string;
   arrow?: boolean;
-};
-export const NavbarButtonTransparent: FC<Props> = ({ to, text, arrow }) => {
+} & React.HtmlHTMLAttributes<HTMLDivElement>;
+export const NavbarButtonTransparent: FC<Props> = ({
+  text,
+  arrow,
+  ...rest
+}) => {
   return (
-    <Link href={to} className={style["navbar-button-transparent"]}>
+    <div className={style["navbar-button-transparent"]} {...rest}>
       {text}
       {arrow && <IoIosArrowDown />}
-    </Link>
+    </div>
   );
 };

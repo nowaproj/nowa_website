@@ -53,10 +53,11 @@ export const StunningAppsSection = () => {
               }}
             />
 
-            <img
-              src="/assets/stunning-1-1.gif"
-              alt=""
+            <video
+              src="/assets/stunning-1-1.webm"
               className={style["app-3"]}
+              autoPlay
+              muted
             />
           </div>
         </div>
