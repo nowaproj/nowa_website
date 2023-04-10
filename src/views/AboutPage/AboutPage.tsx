@@ -20,9 +20,9 @@ export const AboutPage = () => {
           simply not an option when it coms to professionals. Your app should be
           stunning and provides a great experience to stand out in a sea of
           crowded apps, no compromises is acceptable!
-          <br /> That's why our goal is to help you unlock 100% of your power to
-          build something you can be proud of and your users will be in love
-          with!
+          <br /> That{"'"}s why our goal is to help you unlock 100% of your
+          power to build something you can be proud of and your users will be in
+          love with!
         </h2>
       </section>
       <MeetTheTeam />

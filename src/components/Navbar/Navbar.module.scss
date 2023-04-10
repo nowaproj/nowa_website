@@ -9,7 +9,7 @@
     backdrop-filter: blur(12px);
   }
   &[data-other="true"] {
-    background: url("../../../public/assets/cover.svg") no-repeat center/cover !important;
+    background: url("../../../public/assets/cover.webp") no-repeat center/cover !important;
   }
 }
 .header {
@@ -90,8 +90,6 @@
     filter: drop-shadow(-10px 24.7845px 80px #12185c);
     right: 0px;
     bottom: 0px;
-    width: 223.76px;
-    height: 115px;
     object-fit: cover;
     transform: translateX(35%) translateY(30%);
     transform-origin: bottom right;

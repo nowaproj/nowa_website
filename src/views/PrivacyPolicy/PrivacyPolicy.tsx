@@ -52,11 +52,12 @@ export const PrivacyPolicy = () => {
             <br /> Nowa provides you the following options for you to manage
             your information: - You have right to access and view the personal
             information that we collect about you. Requesting access is possible
-            by contacting us at the email address provided in the "Contact
-            Information" section. <br />- You have the right to request that we
-            correct your personal information the moment you believe it is
-            inaccurate or incomplete. <br />- You have the right to request that
-            we delete any personal information that we collect about you. <br />
+            by contacting us at the email address provided in the{" "}
+            {'"Contact Information"'} section. <br />- You have the right to
+            request that we correct your personal information the moment you
+            believe it is inaccurate or incomplete. <br />- You have the right
+            to request that we delete any personal information that we collect
+            about you. <br />
             - You have the right to object the use of your personal information
             for the purpose of direct marketing.
             <br />
@@ -69,9 +70,9 @@ export const PrivacyPolicy = () => {
             <br /> <strong>6. Changes to the privacy policy</strong>
             <br />
             <br /> We may update this privacy policy from time to time. When we
-            make changes, we will update the "effective date" at the top of this
-            page. We may also notify you through a notice on our website or by
-            email.
+            make changes, we will update the {'"effective date"'} at the top of
+            this page. We may also notify you through a notice on our website or
+            by email.
             <br />
             <br /> <strong>7. Disclaimer</strong>
             <br />

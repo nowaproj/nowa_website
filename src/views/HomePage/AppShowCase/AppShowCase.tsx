@@ -71,7 +71,7 @@ export const AppShowCase = () => {
             width={width >= 1200 ? 243.06 : 121.7}
             height={width >= 1200 ? 526.08 : 263.5}
             alt="app example"
-            src="/assets/app3.svg"
+            src="/assets/app3.webp"
           />
         </motion.div>
         <motion.div
@@ -106,7 +106,7 @@ export const AppShowCase = () => {
             width={width >= 1200 ? 243.06 : 121.7}
             height={width >= 1200 ? 526.08 : 263.5}
             alt="app example"
-            src="/assets/app1.svg"
+            src="/assets/app1.webp"
           />
         </motion.div>
       </div>

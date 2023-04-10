@@ -12,7 +12,7 @@ export const STEPS = [
     text: "Make the app work by customizing your own logic, either visually or by code, your choice!",
   },
   {
-    img: "/assets/step4.svg",
+    img: "/assets/step4.png",
     text: "Export to any platform with a single click!",
   },
 ];
@@ -118,7 +118,7 @@ export const FEATURE = [
     text: "Hot Reload",
   },
   {
-    img: "/assets/feature-4.svg",
+    img: "/assets/feature-4.png",
     text: "Templates and plug-ins",
   },
   {

@@ -1,5 +1,5 @@
 .start-building {
-  background: url("../../../public/assets/cover.webp") center/cover no-repeat !important;
+  background: url("../../../../public/assets/cover.webp") center/cover no-repeat !important;
   margin: 0 0 370px 0;
 }
 
@@ -45,7 +45,8 @@
     content: "";
     width: 82px;
     height: 82px;
-    background: url("../../../public/assets/banner.png") center/cover no-repeat !important;
+    background: url("../../../../public/assets/banner.png") center/cover
+      no-repeat !important;
   }
 }
 

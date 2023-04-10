@@ -25,13 +25,7 @@ export const StartBuilding = () => {
             .fill("")
             .map((_, idx) => (
               <div className={style["app"]} key={"app" + idx}>
-                <img
-                  src={`/assets/screen-0${idx + 1}.png`}
-                  alt=""
-                  loading="lazy"
-                  width="100%"
-                  height="100%"
-                />
+                <img src={`/assets/screen-0${idx + 1}.png`} alt="" />
               </div>
             ))}
         </div>
