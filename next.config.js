@@ -2,11 +2,11 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-    output: 'export',
-    distDir: 'builtWebsite',
-    images: {
-        unoptimized: true,
-    },
+    // output: 'export',
+    // distDir: 'builtWebsite',
+    // images: {
+    //     unoptimized: true,
+    // },
 };
 
 module.exports = nextConfig;
