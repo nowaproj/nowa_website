@@ -1,88 +1,89 @@
 .start-building {
-  background: url("../../../../public/assets/cover.webp") center/cover no-repeat !important;
-  margin: 0 0 370px 0;
+    background: url('../../../../public/assets/cover.webp') center/cover
+        no-repeat !important;
+    margin: 0 0 370px 0;
 }
 
 .building {
-  width: var(--width);
-  margin: 0 auto;
-  padding: 50px 0;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: center;
-  position: relative;
-  strong {
-    font-size: 42px;
-    color: white;
-    text-align: center;
-    @media (max-width: 600px) {
-      font-size: 30px;
+    width: var(--width);
+    margin: 0 auto;
+    padding: 50px 0;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    strong {
+        font-size: 42px;
+        color: white;
+        text-align: center;
+        @media (max-width: 600px) {
+            font-size: 30px;
+        }
     }
-  }
-  @media (max-width: 600px) {
-    gap: 55px;
-    height: 540px;
-  }
+    @media (max-width: 600px) {
+        gap: 55px;
+        height: 540px;
+    }
 }
 .buttons {
-  display: flex;
-  gap: 10px;
-  @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-  }
+    display: flex;
+    gap: 10px;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
 }
 
 .download-button {
-  position: relative;
-  &::after {
-    position: absolute;
-    right: -50px;
-    top: -45px;
-    content: "";
-    width: 82px;
-    height: 82px;
-    background: url("../../../../public/assets/banner.png") center/cover
-      no-repeat !important;
-  }
+    position: relative;
+    &::after {
+        position: absolute;
+        right: -50px;
+        top: -45px;
+        content: '';
+        width: 82px;
+        height: 82px;
+        background: url('../../../../public/assets/banner.png') center/cover
+            no-repeat !important;
+    }
 }
 
 .apps {
-  display: flex;
-  gap: 40px;
-  position: absolute;
-  bottom: -100px;
-  width: 100%;
-  max-width: 1300px;
-  left: 0px;
-  display: flex;
-  @media (max-width: 1200px) {
-    max-width: fit-content;
-    width: 1200px;
-    transform: translateX(calc(100vw - 1200px));
-  }
-  @media (max-width: 600px) {
-    width: 600px;
-    transform: translateX(calc(100vw - 600px));
-    gap: 25px;
-  }
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    max-width: 1300px;
+    left: 0px;
+    display: flex;
+    @media (max-width: 1200px) {
+        max-width: fit-content;
+        width: 1200px;
+        transform: translateX(calc(100vw - 1200px));
+    }
+    @media (max-width: 600px) {
+        width: 600px;
+        transform: translateX(calc(100vw - 600px));
+        gap: 25px;
+    }
 }
 .app {
-  filter: drop-shadow(21.9033px 13.142px 219.033px rgba(9, 20, 50, 0.15));
-  img {
-    width: 100%;
-  }
-  @media (max-width: 1200px) {
-    width: 270px;
-  }
-  @media (max-width: 600px) {
-    width: 131.5px;
-  }
+    box-shadow: 21.9033px 13.142px 219.033px rgba(9, 20, 50, 0.15);
+    img {
+        width: 100%;
+    }
+    @media (max-width: 1200px) {
+        width: 270px;
+    }
+    @media (max-width: 600px) {
+        width: 131.5px;
+    }
 }
 .app:nth-child(2n) {
-  position: relative;
-  top: 70px;
+    position: relative;
+    top: 70px;
 }

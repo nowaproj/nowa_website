@@ -1,77 +1,77 @@
 .apps-showcase {
-  margin: 0 auto;
-  padding: 180px 0;
-  width: var(--width);
-  display: grid;
-  grid-template-columns: 339px 1fr;
-  align-items: center;
-  @media (max-width: 1200px) {
-    grid-template-columns: 1fr;
-    gap: 100px;
+    margin: 0 auto;
     padding: 180px 0;
-  }
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-    gap: 100px;
-  }
-  @media (max-width: 600px) {
-    padding: 120px 0;
-  }
+    width: var(--width);
+    display: grid;
+    grid-template-columns: 339px 1fr;
+    align-items: center;
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+        gap: 100px;
+        padding: 180px 0;
+    }
+    @media (max-width: 800px) {
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+    @media (max-width: 600px) {
+        padding: 120px 0;
+    }
 }
 
 .apps-showcase-text {
-  h3 {
-    font-size: 48px;
-    margin-bottom: 25px;
-    @media (max-width: 1200px) {
-      font-size: 30px;
+    h3 {
+        font-size: 48px;
+        margin-bottom: 25px;
+        @media (max-width: 1200px) {
+            font-size: 30px;
+        }
     }
-  }
-  p {
-    color: var(--text-color-sub);
-  }
+    p {
+        color: var(--text-color-sub);
+    }
 }
 .apps-showcase-apps {
-  position: relative;
-  display: grid;
-  place-items: center;
-  height: 650px;
-  @media (max-width: 1200px) {
-    height: 350px;
-  }
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 650px;
+    @media (max-width: 1200px) {
+        height: 350px;
+    }
 }
 
 .app {
-  position: absolute;
-  border-radius: 32.4076px;
-  transform-origin: bottom center;
+    position: absolute;
+    border-radius: 32.4076px;
+    transform-origin: bottom center;
 }
 .app-shadow-1 {
-  filter: drop-shadow(81.019px 27.0063px 135.032px rgba(9, 20, 50, 0.15));
+    box-shadow: 81.019px 27.0063px 135.032px rgba(9, 20, 50, 0.15);
 }
 .app-shadow-2 {
-  filter: drop-shadow(13.5032px 8.1019px 135.032px rgba(9, 20, 50, 0.1));
+    box-shadow: 13.5032px 8.1019px 135.032px rgba(9, 20, 50, 0.1);
 }
 .app-decorator-right {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  z-index: 10;
-  @media (max-width: 1200px) {
-    right: calc(50% - 30px);
-    transform: rotate(30deg);
-    bottom: -50px;
-  }
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+    @media (max-width: 1200px) {
+        right: calc(50% - 30px);
+        transform: rotate(30deg);
+        bottom: -50px;
+    }
 }
 .app-decorator-left {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 10;
-  @media (max-width: 1200px) {
-    left: calc(50% - 40px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    @media (max-width: 1200px) {
+        left: calc(50% - 40px);
 
-    transform: rotate(30deg);
-    top: -50px;
-  }
+        transform: rotate(30deg);
+        top: -50px;
+    }
 }
